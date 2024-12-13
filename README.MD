@@ -19,9 +19,9 @@ Room Availability: Allows users to view and select rooms for their chosen dates.
 1. Clone the Repository
 To clone the repository to your local machine, run:
 ```
-git clone <repository-url>
+git clone https://github.com/xhesidigital/Hotel-Availability-Calendar
 ```
-Replace <repository-url> with the actual URL of this repository.
+Replace https://github.com/xhesidigital/Hotel-Availability-Calendar with the actual URL of this repository.
 
 2. Install Dependencies
 This project uses Node.js for dependency management. Follow these steps:
