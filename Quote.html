@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Quotes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Available Hotel Quotes</h1>
+    <div id="date-picker">
+      <label for="checkin">Check-in:</label>
+      <input type="date" id="checkin" required>
+      <label for="checkout">Check-out:</label>
+      <input type="date" id="checkout" required>
+      <button id="fetch-quotes">Search</button>
+    </div>
+    <div id="loading"></div>
+    <div id="quotes-container"></div>
+  </div>
+
+  <script src="js/quote.js"></script>
+</body>
+</html>

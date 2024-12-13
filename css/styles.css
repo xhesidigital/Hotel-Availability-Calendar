@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* === Styles for Index Page === */
+#calendar-container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.flatpickr-day {
+    position: relative;
+}
+
+.available {
+    background-color: #c8f7c5 !important;
+}
+
+.unavailable {
+    background-color: #f7c8c8 !important;
+    pointer-events: none; /* Disable selection for unavailable dates */
+}
+
+/* Loading Spinner */
+#loading {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Modal */
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it is above other elements */
+}
+  
+#modal h3 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+  
+#modal p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  #modal-close {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+/* === Styles for Quote Page === */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quotes-container {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Quote Card */
+.quote-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.quote-card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.quote-card-content {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-card-content h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.quote-card-content p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.quote-card-content .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.quote-card-content .amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.amenity {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Services Section */
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.services ul li {
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.services ul li::before {
+    content: "✔";
+    margin-right: 5px;
+    color: green;
+}
+
+/* Buttons */
+.select-room-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.select-room-button:hover {
+    background-color: #333;
+}
+
+/* Date Picker */
+#date-picker {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "hotel-booking-app",
+  "version": "1.0.0",
+  "description": "Hotel booking calendar and quotes app.",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node js/app.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-mock": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "node_modules/(?!flatpickr/.*)"
+    ],
+    "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"]
+  },
+  "keywords": [],
+  "author": "Xhesi",
+  "license": "MIT",
+  "dependencies": {
+    "flatpickr": "^4.6.13"
+  }
+}
