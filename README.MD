@@ -21,7 +21,6 @@ To clone the repository to your local machine, run:
 ```
 git clone https://github.com/xhesidigital/Hotel-Availability-Calendar
 ```
-Replace https://github.com/xhesidigital/Hotel-Availability-Calendar with the actual URL of this repository.
 
 2. Install Dependencies
 This project uses Node.js for dependency management. Follow these steps:
